@@ -97,8 +97,8 @@
 
     if (index >= 0) {
       // extend term until word boundary to return the entire word
-      const boundaries = str.substr(index).match(/^\w+/);
-      if (boundaries.length >= 0) {
+      const boundaries = str.substr(index).match(/^[\p{Alpha}]+/u);
+      if (boundaries !== null && boundaries.length >= 0) {
         return {
           start: index,
           length: boundaries[0].length,
@@ -133,14 +133,9 @@
     document.head.appendChild(link);
   }
 
-  function highlightPageTitle (title, terms) {
-    const positions = getTermPosition(title, terms);
-    return buildHighlightedText(title, positions, snippetLength)
-  }
-
   function highlightSectionTitle (sectionTitle, terms) {
     if (sectionTitle) {
-      const text = sectionTitle.text;
+      const text = sectionTitle.title ?? sectionTitle.text;
       const positions = getTermPosition(text, terms);
       return buildHighlightedText(text, positions, snippetLength)
     }
@@ -156,8 +151,7 @@
     return []
   }
 
-  function highlightText (doc, terms) {
-    const text = doc.text;
+  function highlightText (text, terms) {
     const positions = getTermPosition(text, terms);
     return buildHighlightedText(text, positions, snippetLength)
   }
@@ -183,9 +177,12 @@
       }
     }
     return {
-      pageTitleNodes: highlightPageTitle(doc.title, terms.title || []),
+      pageTitleNodes: highlightText(doc.title, terms.title || []),
       sectionTitleNodes: highlightSectionTitle(sectionTitle, terms.title || []),
-      pageContentNodes: highlightText(doc, terms.text || []),
+      pageContentNodes: highlightText(
+        sectionTitle?.title && sectionTitle.text ? sectionTitle.text : doc.text,
+        terms.text || []
+      ),
       pageKeywordNodes: highlightKeyword(doc, terms.keyword || []),
     }
   }
@@ -199,12 +196,12 @@
       let sectionTitle;
       if (ids.length > 1) {
         const titleId = ids[1];
-        sectionTitle = doc.titles.filter(function (item) {
+        sectionTitle = doc.titles.find(function (item) {
           return String(item.id) === titleId
-        })[0];
+        });
       }
       const metadata = item.matchData.metadata;
-      const highlightingResult = highlightHit(metadata, sectionTitle, doc);
+      const highlightingResult = highlightHit(metadata, sectionTitle || doc, doc);
       const componentVersion = store.componentVersions[`${doc.component}/${doc.version}`];
       if (componentVersion !== undefined && currentComponent !== componentVersion) {
         const searchResultComponentHeader = document.createElement('div');
