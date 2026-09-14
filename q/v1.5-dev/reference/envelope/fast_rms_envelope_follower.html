@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Fast RMS Envelope Follower :: Q Docs</title>
     <link rel="canonical" href="https://www.cycfi.com/q/v1.5-dev/reference/envelope/fast_rms_envelope_follower.html">
-    <meta name="generator" content="Antora 3.1.14">
+    <meta name="generator" content="Antora 3.1.15">
     <link rel="stylesheet" href="../../../../_/css/site.css">
 <meta name="og:title" content="Q Docs Q DSP Library Documentation"/>
 <link rel="icon" type="image/png" sizes="16x16" href="https://cycfi.com/assets/icons/favicon-16x16.png"/>
@@ -65,7 +65,58 @@
     <a class="nav-link" href="../../setup.html">Setup and Installation</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="../../quick_start.html">Quick Start</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../tutorials/index.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Basics</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/list_devices.html">List Devices</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/sin_osc.html">Sine Oscillator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/waveforms.html">Waveforms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/delay.html">Delay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/io_delay.html">IO Delay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Synthesis and MIDI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/midi_monitor.html">MIDI Monitor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/square_synth.html">Square Synth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/poly_synth.html">Polyphonic Synth</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Granular</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/grain_freeze.html">Grain Freeze</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tutorials/sustain_hold.html">Sustain Hold</a>
+  </li>
+</ul>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="../../fundamentals.html">Fundamentals</a>
@@ -108,6 +159,12 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../units/pitch_names.html">Pitch Names</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../units/literals.html">Literals</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -145,6 +202,21 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../resonant.html">Resonant Filters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../resonant/svf.html">State Variable Filter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../resonant/moog_ladder.html">Moog Ladder Filter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../resonant/chamberlin_filter.html">Chamberlin Filter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../envelope.html">Envelope</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -161,6 +233,9 @@
   </li>
   <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="fast_rms_envelope_follower.html">Fast RMS Envelope Follower</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="true_rms_envelope_follower.html">True RMS Envelope Follower</a>
   </li>
 </ul>
   </li>
@@ -196,6 +271,9 @@
     <a class="nav-link" href="../misc/moving_average.html">Moving Average</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/moving_maximum.html">Moving Maximum</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../misc/noise_gate.html">Noise Gate</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -211,10 +289,55 @@
     <a class="nav-link" href="../misc/dynamic_smoother.html">Dynamic Smoother</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/integrator.html">Integrator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/map.html">Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/median3.html">Median</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/fast_downsample.html">Fast Downsample</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/differentiator.html">Differentiators</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/zero_crossing.html">Zero Crossing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../misc/schmitt_trigger.html">Schmitt Trigger</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/window_comparator.html">Window Comparator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/edge.html">Edge Detectors</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/level_crossfade.html">Level Crossfade</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/allpass.html">All-Pass Phase Shifters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/hilbert_quadrature.html">Hilbert Quadrature</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/monostable.html">Monostable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../misc/peak.html">Peak</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/peak_picker.html">Peak Picker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/clip.html">Clippers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/signal_conditioner.html">Signal Conditioner</a>
   </li>
 </ul>
   </li>
@@ -258,12 +381,30 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../synth/envelope_gen.html">Envelope Generator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../synth/grain.html">Grain</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../synth/noise_gen.html">Noise Generators</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spectral</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../spectral/fft.html">FFT</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Support</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../support/fast_math.html">Fast Math</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../support/basic_concepts.html">Basic Concepts</a>
   </li>
@@ -290,6 +431,39 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../utility/fractional_ring_buffer.html">Fractional Ring Buffer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../utility/sample_interpolation.html">Sample Interpolation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../utility/best_lag.html">Best Lag</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../utility/antialiasing.html">Antialiasing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../utility/float_convert.html">Sample Format Conversion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../utility/bitset.html">Bitset</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../pitch.html">Pitch Detection</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pitch/pitch_detector.html">BACF Pitch Detector</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pitch/bacf_period_detector.html">BACF Period Detector</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pitch/bitstream_acf.html">Bitstream Autocorrelation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pitch/zero_crossing_collector.html">Zero Crossing Collector</a>
   </li>
 </ul>
   </li>
@@ -376,7 +550,7 @@
 <p>The Fast RMS Envelope Follower is a variation of the <a href="fast_envelope_follower.html" class="xref page">Fast Envelope Follower</a>. It is a simple composite class that contains a <a href="fast_ave_envelope_follower.html" class="xref page">Fast Averaging Envelope Follower</a> member.</p>
 </div>
 <div class="paragraph">
-<p><span class="image right"><img src="../../_images/rms.svg" alt="RMS" width="300"></span>The signal path is as follows:</p>
+<p><span class="image right"><img src="../../_images/fast-rms.svg" alt="Fast RMS: square root of the smoothed held peak of the squared signal" width="340"></span>The signal path is as follows:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -384,7 +558,7 @@
 <p>Square the signal.</p>
 </li>
 <li>
-<p>Apply the fast averaging envelope follower. The moving average filter in the fast averaging envelope follower returns the arithmetic mean of the squared values over its <code>hold</code> period.</p>
+<p>Apply the fast averaging envelope follower: hold the peak of the squared signal over the <code>hold</code> window, then smooth the resulting staircase with a moving average filter.</p>
 </li>
 <li>
 <p>Return the square root the result.</p>
@@ -392,7 +566,22 @@
 </ol>
 </div>
 <div class="paragraph">
+<p>Note the <code>max</code> under the radical: this is what distinguishes it from the <a href="true_rms_envelope_follower.html" class="xref page">True RMS Envelope Follower</a>, which averages the squared signal itself (a <code>mean</code> under the radical) and therefore measures actual power.</p>
+</div>
+<div class="paragraph">
 <p>This is embodied in the <code>fast_rms_envelope_follower</code> class. Following the fast envelope follower API, the function call operator accepts a floating point sample, transforms it, and returns an envelope, also a floating point.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="📢 &#160;IMPORTANT"></i>
+</td>
+<td class="content">
+This is a fast level <em>detector</em> computed in the power domain, not a power measurement. Step 2 holds the <em>peak</em> of the squared signal, so a steady sine reads its peak <code>A</code> — not its RMS level <code>A/√2</code> — and the reading depends on the waveform&#8217;s crest factor. That is the right behavior where transients must be caught with low ripple, such as dynamics side-chains. Where an actual power measurement is needed — level matching, envelope ratios, metering — use the <a href="true_rms_envelope_follower.html" class="xref page">True RMS Envelope Follower</a> instead: it reads identically for any two signals of equal power.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>The <code>fast_rms_envelope_follower_db</code> variant works in the dB domain, making it easy to use as an envelope follower for dynamic range effects (compressor, expander, and agc) that already work in the dB domain, so we eliminate a linear to decibel conversion and optimize computation by using division by 2 instead of <code>sqrt</code> as an added bonus.</p>
@@ -403,7 +592,7 @@
 <h2 id="_response"><a class="anchor" href="#_response"></a>Response</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The plot in Figure 1 below shows the fast RMS envelope follower’s response (envelope: green, signal: blue, absolute value of the signal: dark blue). It may look indistinguishable from the <a href="fast_ave_envelope_follower.html" class="xref page">Fast Averaging Envelope Follower</a>'s output, but this detector returns true RMS results.</p>
+<p>The plot in Figure 1 below shows the fast RMS envelope follower’s response (envelope: green, signal: blue, absolute value of the signal: dark blue). It may look indistinguishable from the <a href="fast_ave_envelope_follower.html" class="xref page">Fast Averaging Envelope Follower</a>'s output, but this detector&#8217;s averaging operates in the power (squared) domain, which weights louder excursions more heavily.</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -432,6 +621,8 @@
 {
             fast_rms_envelope_follower(duration hold, float sps);
     float   operator()(float s);
+    float   operator()() const;
+    float   peak_square() const;
 };
 
 struct fast_rms_envelope_follower_db : fast_rms_envelope_follower
@@ -439,6 +630,7 @@ struct fast_rms_envelope_follower_db : fast_rms_envelope_follower
     using fast_rms_envelope_follower::fast_rms_envelope_follower;
 
     decibel operator()(float s);
+    decibel operator()() const;
 };</code></pre>
 </div>
 </div>
@@ -541,16 +733,35 @@ C++ brace initialization may also be used.
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>env(s)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Process the input sample <code>s</code> and
                       return the detected envelope.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>float</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>float</code> (<code>decibel</code> for the <code>_db</code> variant)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>env()</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Get the latest held value of the
-                      <code>basic_fast_ave_envelope_follower&lt;div&gt;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the latest detected envelope
+                      without processing a sample.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>float</code> (<code>decibel</code> for the <code>_db</code> variant)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>env.peak_square()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the raw smoothed peak of the
+                      squared signal — the value under the
+                      radical (no square root).</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>float</code></p></td>
 </tr>
 </tbody>
 </table>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="💡 &#160;TIP"></i>
+</td>
+<td class="content">
+<code>peak_square()</code> is the counterpart of the <a href="true_rms_envelope_follower.html" class="xref page">True RMS Envelope Follower</a>'s <code>mean_square()</code>: consumers comparing against a squared threshold can stay in the squared domain and skip the square root entirely.
+</td>
+</tr>
+</table>
+</div>
 </div>
 </div>
 </div>

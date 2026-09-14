@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Q Audio DSP Library :: Q Docs</title>
     <link rel="canonical" href="https://www.cycfi.com/q/v1.5-dev/index.html">
-    <meta name="generator" content="Antora 3.1.14">
+    <meta name="generator" content="Antora 3.1.15">
     <link rel="stylesheet" href="../../_/css/site.css">
 <meta name="og:title" content="Q Docs Q DSP Library Documentation"/>
 <link rel="icon" type="image/png" sizes="16x16" href="https://cycfi.com/assets/icons/favicon-16x16.png"/>
@@ -65,7 +65,58 @@
     <a class="nav-link" href="setup.html">Setup and Installation</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="quick_start.html">Quick Start</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="tutorials/index.html">Tutorials</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Basics</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/list_devices.html">List Devices</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/sin_osc.html">Sine Oscillator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/waveforms.html">Waveforms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/delay.html">Delay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/io_delay.html">IO Delay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Synthesis and MIDI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/midi_monitor.html">MIDI Monitor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/square_synth.html">Square Synth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/poly_synth.html">Polyphonic Synth</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Granular</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/grain_freeze.html">Grain Freeze</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="tutorials/sustain_hold.html">Sustain Hold</a>
+  </li>
+</ul>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="1">
     <a class="nav-link" href="fundamentals.html">Fundamentals</a>
@@ -108,6 +159,12 @@
   </li>
 </ul>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/units/pitch_names.html">Pitch Names</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/units/literals.html">Literals</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -145,6 +202,21 @@
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="reference/resonant.html">Resonant Filters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/resonant/svf.html">State Variable Filter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/resonant/moog_ladder.html">Moog Ladder Filter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/resonant/chamberlin_filter.html">Chamberlin Filter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="reference/envelope.html">Envelope</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="3">
@@ -161,6 +233,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference/envelope/fast_rms_envelope_follower.html">Fast RMS Envelope Follower</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/envelope/true_rms_envelope_follower.html">True RMS Envelope Follower</a>
   </li>
 </ul>
   </li>
@@ -196,6 +271,9 @@
     <a class="nav-link" href="reference/misc/moving_average.html">Moving Average</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/moving_maximum.html">Moving Maximum</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference/misc/noise_gate.html">Noise Gate</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -211,10 +289,55 @@
     <a class="nav-link" href="reference/misc/dynamic_smoother.html">Dynamic Smoother</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/integrator.html">Integrator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/map.html">Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/median3.html">Median</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/fast_downsample.html">Fast Downsample</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/differentiator.html">Differentiators</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/zero_crossing.html">Zero Crossing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference/misc/schmitt_trigger.html">Schmitt Trigger</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/window_comparator.html">Window Comparator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/edge.html">Edge Detectors</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/level_crossfade.html">Level Crossfade</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/allpass.html">All-Pass Phase Shifters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/hilbert_quadrature.html">Hilbert Quadrature</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/monostable.html">Monostable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference/misc/peak.html">Peak</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/peak_picker.html">Peak Picker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/clip.html">Clippers</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/misc/signal_conditioner.html">Signal Conditioner</a>
   </li>
 </ul>
   </li>
@@ -258,12 +381,30 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference/synth/envelope_gen.html">Envelope Generator</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/synth/grain.html">Grain</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/synth/noise_gen.html">Noise Generators</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spectral</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/spectral/fft.html">FFT</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Support</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/support/fast_math.html">Fast Math</a>
+  </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference/support/basic_concepts.html">Basic Concepts</a>
   </li>
@@ -290,6 +431,39 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="reference/utility/fractional_ring_buffer.html">Fractional Ring Buffer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/utility/sample_interpolation.html">Sample Interpolation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/utility/best_lag.html">Best Lag</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/utility/antialiasing.html">Antialiasing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/utility/float_convert.html">Sample Format Conversion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/utility/bitset.html">Bitset</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="reference/pitch.html">Pitch Detection</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/pitch/pitch_detector.html">BACF Pitch Detector</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/pitch/bacf_period_detector.html">BACF Period Detector</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/pitch/bitstream_acf.html">Bitstream Autocorrelation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="reference/pitch/zero_crossing_collector.html">Zero Crossing Collector</a>
   </li>
 </ul>
   </li>
@@ -382,7 +556,7 @@ programming techniques, especially function composition using fine-grained and r
 </div>
 <div class="paragraph">
 <p>The library is Open Source and released under the very liberal
-<a href="http://tinyurl.com/p6pekvo">MIT license</a>.</p>
+<a href="https://www.boost.org/LICENSE_1_0.txt">Boost Software License, Version 1.0</a>.</p>
 </div>
 </div>
 </div>
@@ -398,7 +572,62 @@ programming techniques, especially function composition using fine-grained and r
 <p><a href="setup.html" class="xref page">Setup and Installation</a></p>
 </li>
 <li>
-<p><a href="quick_start.html" class="xref page">Quick Start</a></p>
+<p><a href="tutorials/index.html" class="xref page">Tutorials</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Basics</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="tutorials/list_devices.html" class="xref page">List Devices</a></p>
+</li>
+<li>
+<p><a href="tutorials/sin_osc.html" class="xref page">Sine Oscillator</a></p>
+</li>
+<li>
+<p><a href="tutorials/waveforms.html" class="xref page">Waveforms</a></p>
+</li>
+<li>
+<p><a href="tutorials/delay.html" class="xref page">Delay</a></p>
+</li>
+<li>
+<p><a href="tutorials/io_delay.html" class="xref page">IO Delay</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Synthesis and MIDI</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="tutorials/midi_monitor.html" class="xref page">MIDI Monitor</a></p>
+</li>
+<li>
+<p><a href="tutorials/square_synth.html" class="xref page">Square Synth</a></p>
+</li>
+<li>
+<p><a href="tutorials/poly_synth.html" class="xref page">Polyphonic Synth</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Granular</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="tutorials/grain_freeze.html" class="xref page">Grain Freeze</a></p>
+</li>
+<li>
+<p><a href="tutorials/sustain_hold.html" class="xref page">Sustain Hold</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p><a href="fundamentals.html" class="xref page">Fundamentals</a></p>
@@ -443,6 +672,12 @@ programming techniques, especially function composition using fine-grained and r
 </ul>
 </div>
 </li>
+<li>
+<p><a href="reference/units/pitch_names.html" class="xref page">Pitch Names</a></p>
+</li>
+<li>
+<p><a href="reference/units/literals.html" class="xref page">Literals</a></p>
+</li>
 </ul>
 </div>
 </li>
@@ -481,6 +716,22 @@ programming techniques, especially function composition using fine-grained and r
 </div>
 </li>
 <li>
+<p><a href="reference/resonant.html" class="xref page">Resonant Filters</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference/resonant/svf.html" class="xref page">State Variable Filter</a></p>
+</li>
+<li>
+<p><a href="reference/resonant/moog_ladder.html" class="xref page">Moog Ladder Filter</a></p>
+</li>
+<li>
+<p><a href="reference/resonant/chamberlin_filter.html" class="xref page">Chamberlin Filter</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
 <p><a href="reference/envelope.html" class="xref page">Envelope</a></p>
 <div class="ulist">
 <ul>
@@ -498,6 +749,9 @@ programming techniques, especially function composition using fine-grained and r
 </li>
 <li>
 <p><a href="reference/envelope/fast_rms_envelope_follower.html" class="xref page">Fast RMS Envelope Follower</a></p>
+</li>
+<li>
+<p><a href="reference/envelope/true_rms_envelope_follower.html" class="xref page">True RMS Envelope Follower</a></p>
 </li>
 </ul>
 </div>
@@ -535,6 +789,9 @@ programming techniques, especially function composition using fine-grained and r
 <p><a href="reference/misc/moving_average.html" class="xref page">Moving Average</a></p>
 </li>
 <li>
+<p><a href="reference/misc/moving_maximum.html" class="xref page">Moving Maximum</a></p>
+</li>
+<li>
 <p><a href="reference/misc/noise_gate.html" class="xref page">Noise Gate</a></p>
 </li>
 <li>
@@ -550,10 +807,55 @@ programming techniques, especially function composition using fine-grained and r
 <p><a href="reference/misc/dynamic_smoother.html" class="xref page">Dynamic Smoother</a></p>
 </li>
 <li>
+<p><a href="reference/misc/integrator.html" class="xref page">Integrator</a></p>
+</li>
+<li>
+<p><a href="reference/misc/map.html" class="xref page">Map</a></p>
+</li>
+<li>
+<p><a href="reference/misc/median3.html" class="xref page">Median</a></p>
+</li>
+<li>
+<p><a href="reference/misc/fast_downsample.html" class="xref page">Fast Downsample</a></p>
+</li>
+<li>
+<p><a href="reference/misc/differentiator.html" class="xref page">Differentiators</a></p>
+</li>
+<li>
+<p><a href="reference/misc/zero_crossing.html" class="xref page">Zero Crossing</a></p>
+</li>
+<li>
 <p><a href="reference/misc/schmitt_trigger.html" class="xref page">Schmitt Trigger</a></p>
 </li>
 <li>
+<p><a href="reference/misc/window_comparator.html" class="xref page">Window Comparator</a></p>
+</li>
+<li>
+<p><a href="reference/misc/edge.html" class="xref page">Edge Detectors</a></p>
+</li>
+<li>
+<p><a href="reference/misc/level_crossfade.html" class="xref page">Level Crossfade</a></p>
+</li>
+<li>
+<p><a href="reference/misc/allpass.html" class="xref page">All-Pass Phase Shifters</a></p>
+</li>
+<li>
+<p><a href="reference/misc/hilbert_quadrature.html" class="xref page">Hilbert Quadrature</a></p>
+</li>
+<li>
+<p><a href="reference/misc/monostable.html" class="xref page">Monostable</a></p>
+</li>
+<li>
 <p><a href="reference/misc/peak.html" class="xref page">Peak</a></p>
+</li>
+<li>
+<p><a href="reference/misc/peak_picker.html" class="xref page">Peak Picker</a></p>
+</li>
+<li>
+<p><a href="reference/misc/clip.html" class="xref page">Clippers</a></p>
+</li>
+<li>
+<p><a href="reference/misc/signal_conditioner.html" class="xref page">Signal Conditioner</a></p>
 </li>
 </ul>
 </div>
@@ -598,6 +900,22 @@ programming techniques, especially function composition using fine-grained and r
 <li>
 <p><a href="reference/synth/envelope_gen.html" class="xref page">Envelope Generator</a></p>
 </li>
+<li>
+<p><a href="reference/synth/grain.html" class="xref page">Grain</a></p>
+</li>
+<li>
+<p><a href="reference/synth/noise_gen.html" class="xref page">Noise Generators</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Spectral</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference/spectral/fft.html" class="xref page">FFT</a></p>
+</li>
 </ul>
 </div>
 </li>
@@ -605,6 +923,9 @@ programming techniques, especially function composition using fine-grained and r
 <p>Support</p>
 <div class="ulist">
 <ul>
+<li>
+<p><a href="reference/support/fast_math.html" class="xref page">Fast Math</a></p>
+</li>
 <li>
 <p><a href="reference/support/basic_concepts.html" class="xref page">Basic Concepts</a></p>
 </li>
@@ -632,6 +953,40 @@ programming techniques, especially function composition using fine-grained and r
 </li>
 <li>
 <p><a href="reference/utility/fractional_ring_buffer.html" class="xref page">Fractional Ring Buffer</a></p>
+</li>
+<li>
+<p><a href="reference/utility/sample_interpolation.html" class="xref page">Sample Interpolation</a></p>
+</li>
+<li>
+<p><a href="reference/utility/best_lag.html" class="xref page">Best Lag</a></p>
+</li>
+<li>
+<p><a href="reference/utility/antialiasing.html" class="xref page">Antialiasing</a></p>
+</li>
+<li>
+<p><a href="reference/utility/float_convert.html" class="xref page">Sample Format Conversion</a></p>
+</li>
+<li>
+<p><a href="reference/utility/bitset.html" class="xref page">Bitset</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="reference/pitch.html" class="xref page">Pitch Detection</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="reference/pitch/pitch_detector.html" class="xref page">BACF Pitch Detector</a></p>
+</li>
+<li>
+<p><a href="reference/pitch/bacf_period_detector.html" class="xref page">BACF Period Detector</a></p>
+</li>
+<li>
+<p><a href="reference/pitch/bitstream_acf.html" class="xref page">Bitstream Autocorrelation</a></p>
+</li>
+<li>
+<p><a href="reference/pitch/zero_crossing_collector.html" class="xref page">Zero Crossing Collector</a></p>
 </li>
 </ul>
 </div>
@@ -680,8 +1035,8 @@ These libraries are all part of the <a href="http://tinyurl.com/jubgged">Boost L
 </div>
 <hr>
 <div class="paragraph">
-<p><em>Copyright (c) 2014-2024 Joel de Guzman. All rights reserved.</em>
-<em>Distributed under the <a href="https://opensource.org/licenses/MIT">MIT License</a></em></p>
+<p><em>Copyright (c) 2014-2026 Joel de Guzman. All rights reserved.</em>
+<em>Distributed under the <a href="https://www.boost.org/LICENSE_1_0.txt">Boost Software License, Version 1.0</a></em></p>
 </div>
 </div>
 </div>
